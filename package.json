@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "dev": "ng serve",
-    "start": "npm run server",
-    "server": "ng build --prod && npm run gn-sw && node server/app.js",
+    "start": "node server/app.js",
+    "server": "npm run build && node server/app.js",
     "build": "ng build --prod && npm run gn-sw",
     "gn-sw": "node generate-service-worker.js",
     "test": "ng test",
