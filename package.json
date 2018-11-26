@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "server": "ng build --prod && npm run gn-sw && node server/app.js",
+    "build": "ng build --prod && npm run gn-sw",
+    "gn-sw": "node generate-service-worker.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,7 +23,11 @@
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
     "core-js": "^2.5.4",
+    "koa": "^2.6.2",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0",
     "rxjs": "^6.0.0",
+    "workbox-build": "^3.6.3",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
