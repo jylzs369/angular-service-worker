@@ -13,6 +13,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       // Use the window load event to keep the page load performant
+      alert(navigator.serviceWorker)
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js');
       })

@@ -26,8 +26,48 @@ self.__precacheManifest = [
     "revision": "2dfc5e93c322415947db1126b2db1eeb"
   },
   {
+    "url": "assets/img/avatars/1.jpg",
+    "revision": "5a0fc4811977c611851bf002e38f4c2c"
+  },
+  {
+    "url": "assets/img/avatars/10.jpg",
+    "revision": "953461ff24dcd7b2f58df0facafff6d9"
+  },
+  {
+    "url": "assets/img/avatars/2.jpg",
+    "revision": "8fd4b5ab22853ed07e1e703e2e69babf"
+  },
+  {
+    "url": "assets/img/avatars/3.jpg",
+    "revision": "23735aba2d5298ce2c678fb713b92fa4"
+  },
+  {
+    "url": "assets/img/avatars/4.jpg",
+    "revision": "2eccf5e3a19b48ff2f9b121150c6a574"
+  },
+  {
+    "url": "assets/img/avatars/5.jpg",
+    "revision": "6f8bfb5edf02015df46842cc0f5c350d"
+  },
+  {
+    "url": "assets/img/avatars/6.jpg",
+    "revision": "86089425fea5ad53ab2072679b74c1d9"
+  },
+  {
+    "url": "assets/img/avatars/7.jpg",
+    "revision": "e18b7a03b8d2450da89076d3b52c6b53"
+  },
+  {
+    "url": "assets/img/avatars/8.jpg",
+    "revision": "139a2fbb6fc190b1b90b72e43cea0e0b"
+  },
+  {
+    "url": "assets/img/avatars/9.jpg",
+    "revision": "51bef79890a601223105c965c4f6fb77"
+  },
+  {
     "url": "index.html",
-    "revision": "4de14c3473769d6e1140a9a5a11e1c63"
+    "revision": "b280787dc000dd7c8ec83264ddf4f4e2"
   },
   {
     "url": "main.d12298fb96e8e64ca84b.js",
@@ -50,5 +90,3 @@ workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/index.html");
-
-workbox.routing.registerRoute(/\/assets\/(.*)/, workbox.strategies.cacheFirst(), 'GET');

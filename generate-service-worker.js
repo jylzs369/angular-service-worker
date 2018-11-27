@@ -1,20 +1,16 @@
-const build = require('workbox-build')
-const SRC_DIR = './'
-const BUILD_DIR = 'dist/'
+const { generateSW } = require('workbox-build')
+const path = require('path')
+
+const BUILD_DIR = 'dist'
 
 const options = {
-    swDest: `${BUILD_DIR}/sw.js`,
+    swDest: path.join(`${BUILD_DIR}`, 'sw.js'),
     globDirectory: BUILD_DIR,
+    globPatterns: [`**/*.{js,css,html,svg,png,jpg}`],
     navigateFallback: '/index.html',
-    clientsClaim: true,
-    runtimeCaching: [
-        {
-            urlPattern: /\/assets\/(.*)/,
-            handler: 'cacheFirst'
-        }
-    ]
+    clientsClaim: true
 }
 
-build.generateSW(options).then(() => {
-    console.log('Generated service worker with static cache')
+generateSW(options).then(obj => {
+    console.log(`Generated service worker with static cache. ${obj.count} files are cached`)
 })
