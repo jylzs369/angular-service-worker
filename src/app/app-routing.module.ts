@@ -5,8 +5,7 @@ import { NotFoundComponent } from './not-found/not-found.component'
 
 const routes: Routes = [
   { path: 'heroes', loadChildren: './heroes/heroes.module#HeroesModule' },
-  { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
