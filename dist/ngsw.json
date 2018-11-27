@@ -1,0 +1,93 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/4.570080b09c270bffe5f0.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.bcc9f66f7e7504579449.js",
+        "/polyfills.4a68e5b4d8bcc303b21f.js",
+        "/runtime.ed2469bc20b0d4d65e6c.js",
+        "/styles.3ff695c00d717f2d2a11.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/avatars/1.jpg",
+        "/assets/img/avatars/10.jpg",
+        "/assets/img/avatars/2.jpg",
+        "/assets/img/avatars/3.jpg",
+        "/assets/img/avatars/4.jpg",
+        "/assets/img/avatars/5.jpg",
+        "/assets/img/avatars/6.jpg",
+        "/assets/img/avatars/7.jpg",
+        "/assets/img/avatars/8.jpg",
+        "/assets/img/avatars/9.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/4.570080b09c270bffe5f0.js": "e3a708fdf52c644fe383379ffe33f5da80d13a0f",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/img/avatars/1.jpg": "703cbfd8eebe9916ed2c5f66a561f69356cb4ae9",
+    "/assets/img/avatars/10.jpg": "bced07c22aac190b3386444862284ff2d482ab01",
+    "/assets/img/avatars/2.jpg": "2a7f231267ba3e34dc77cf436d7a58e6f37433af",
+    "/assets/img/avatars/3.jpg": "0bf4a40cef9b66847fbca3f30054dd8398f43014",
+    "/assets/img/avatars/4.jpg": "2ea0b603bd42994110c8cf7528cadb2d51ceffd4",
+    "/assets/img/avatars/5.jpg": "f643b34667713e85b13e628d0eefc3260e8c700b",
+    "/assets/img/avatars/6.jpg": "c48c77557567387374f51cd7aa60428e94b3b124",
+    "/assets/img/avatars/7.jpg": "20aaa07c9e9514358a5a19c1b11a124a955f5234",
+    "/assets/img/avatars/8.jpg": "308ae6d150bdebf44781586d19539764ee5e79e4",
+    "/assets/img/avatars/9.jpg": "b2180c7563b6be2d0f9a24d72075008fcc10b353",
+    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/index.html": "9cd881ee1ceb98e40651b299a72b4de001405e01",
+    "/main.bcc9f66f7e7504579449.js": "36a0ae74065d89c51cf834dec6b907365a6c44ac",
+    "/polyfills.4a68e5b4d8bcc303b21f.js": "ce68d153e9b9b6d26b625069c0ee99ae09c6f255",
+    "/runtime.ed2469bc20b0d4d65e6c.js": "04f71183a34cfa68a26fabf35efcf068c1f2b2a5",
+    "/styles.3ff695c00d717f2d2a11.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
