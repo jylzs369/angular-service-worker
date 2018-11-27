@@ -1,0 +1,11 @@
+ul {
+    margin: 1em;
+    padding: 0;
+}
+li {
+    list-style: none;
+    text-align: center;
+}
+li img {
+    width: 100%;
+}
