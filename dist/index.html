@@ -12,6 +12,13 @@
 <link rel="stylesheet" href="styles.3ff695c00d717f2d2a11.css"></head>
 <body>
   <app-root></app-root>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/ngsw-worker.js').then(() => {
+        alert(navigator.userAgent)
+      })
+    }
+  </script>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
 <script type="text/javascript" src="runtime.ed2469bc20b0d4d65e6c.js"></script><script type="text/javascript" src="polyfills.4a68e5b4d8bcc303b21f.js"></script><script type="text/javascript" src="main.bcc9f66f7e7504579449.js"></script></body>
 </html>
