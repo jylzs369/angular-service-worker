@@ -14,8 +14,10 @@
   <app-root></app-root>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/ngsw-worker.js').then(() => {
-        alert(navigator.userAgent)
+      // Use the window load event to keep the page load performant
+      alert(navigator.userAgent)
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/ngsw-worker.js');
       })
     }
   </script>
